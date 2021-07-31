@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zippy</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <!-- Zippy -->
+    <div class="container" style="text-align: center;">
+
+        <!-- Image Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img class="card-img-top" src="assets\image-1.jpg" width=100% height="740">
+            </div>
+            <div class="mySlides fade">
+                <img class="card-img-top" src="assets\image-2.jpg" width=100% height="740">
+            </div>
+            <div class="mySlides fade">
+                <img class="card-img-top" src="assets\image-3.jpg" width=100% height="740">
+            </div>
+            <div class="mySlides fade">
+                <img class="card-img-top" src="assets\image-4.jpg" width=100% height="740">
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="top-left" style="font-size:xx-large; font-family: 'Lobster', cursive;"><strong>ZIPPY</strong></div>
+        <div class="topnav" id="myTopnav"><strong>
+                <a style="color:yellow" href="#home">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#pricing">PRICING</a>
+                <a href="#team">TEAM</a>
+                <a href="#blog">BLOG</a>
+                <a href="#contact">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a class="icon">
+                    <div class="container4" onclick="icon(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </a></strong>
+        </div>
+        <script>
+            function icon(x) {
+                x.classList.toggle("change");
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        <div class="centered">
+            <div style="text-align: left">
+                <h1 style="left: 0px;margin-top: 10px;">One page promising to<br>fill all your needs!</h1><br>
+                <p>This is photoshop version of Lorem ipsum. Proin<br>dolor sit amet, consectetur adipiscing elit</p>
+                <br>
+                <button class="button button7">Learn More</button>
+                <button class="button button4">Learn More</button>
+            </div>
+        </div>
+        <div class="bottom-left">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+    <!-- JS for Slideshow -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 1500);
+        }
+    </script>
+
+    <!-- Welcome to Zippy -->
+    <h1 style="text-align: center;margin-top: 50px;">Welcome to Zippy</h1>
+    <div class="welcome1">
+        <div>
+            <p class="para" style="color: rgba(163, 161, 161, 0.74);">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Nam
+                nunc lacus, consequat vel arcu sit amet, laoreet tempor diam. Etiam lobortis eget lectus nec
+                sollicitudin. Morbi ornare augue in lobortis fermentum.</p>
+        </div>
+        <div style="margin-top: 10px;">
+            <img src="assets/umbrella.png" alt="umbrella image" width=100% height="250">
+        </div>
+    </div>
+    <div class="welcome2">
+        <div>
+            <div class="round-icons">
+            <i class="fas fa-bell"></i>
+            </div>
+            <h4 style="padding-top: 20px; padding-bottom: 20px;">Lorem Ipusm</h4>
+            <p class="para" style="color: rgba(163, 161, 161, 0.74);">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
+                eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button4" style="padding: 10px 20px;">Learn More</button>
+        </div>
+        <div>
+            <div class="round-icons">
+            <i class="fas fa-sms"></i>
+            </div>
+            <h4 style="padding-top: 20px; padding-bottom: 20px;">Lorem Ipusm</h4>
+            <p class="para" style="color: rgba(163, 161, 161, 0.74);">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
+                eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button4" style="padding: 10px 20px;">Learn More</button>
+        </div>
+        <div>
+            <div class="round-icons">
+                <i class="fas fa-umbrella"></i>
+            </div>
+            <h4 style="padding-top: 20px; padding-bottom: 20px;">Lorem Ipusm</h4>
+            <p class="para" style="color: rgba(163, 161, 161, 0.74);">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do
+                eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button4" style="padding: 10px 20px;">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <h1 style="text-align: center; margin: 40px;">Projects</h1>
+    <div class="row">
+        <div class="column c2">
+            <img src="assets\project.jpg" alt="project image" width=100% height="500">
+            <div class="project">
+                <h3>Project Name</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc lacus, consequat vel arcu sit amet,
+                    laoreet tempor diam.</p><br>
+                <button class="button button5">Launch Case Study</button>
+            </div>
+        </div>
+        <div class="column c2">
+            <img src="assets\project.jpg" alt="project image" width=100% height="500">
+            <div class="project">
+                <h3>Project Name</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc lacus, consequat vel arcu sit amet,
+                    laoreet tempor diam.</p><br>
+                <button class="button button5">Launch Case Study</button>
+            </div>
+        </div>
+        <div class="column c2">
+            <img src="assets\project.jpg" alt="project image" width=100% height="500">
+            <div class="project">
+                <h3>Project Name</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc lacus, consequat vel arcu sit amet,
+                    laoreet tempor diam.</p><br>
+                <button class="button button5">Launch Case Study</button>
+            </div>
+        </div>
+        <div class="column c2">
+            <img src="assets\project.jpg" alt="project image" width=100% height="500">
+            <div class="project">
+                <h3>Project Name</h3><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nunc lacus, consequat vel arcu sit amet,
+                    laoreet tempor diam.</p><br>
+                <button class="button button5">Launch Case Study</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Table -->
+    <br><br><br>
+    <h1 style="text-align: center; margin-bottom: 50px;">Pricing Table</h1>
+    <div class="fc mar">
+        <div>
+            <h4 style="padding-bottom: 20px;">STANDARD PLAN</h4>
+            <p style="color: rgba(163, 161, 161, 0.74);">Free</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button4">BUY</button>
+        </div>
+        <hr>
+        <div>
+            <h4 style="padding-bottom: 20px;">BUSINESS PLAN</h4>
+            <p style="color: rgba(163, 161, 161, 0.74);">19$/month</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button4">BUY</button>
+        </div>
+        <hr>
+        <div>
+            <h4 style="padding-bottom: 20px;">PREMIUM PLAN</h4>
+            <p style="color: rgba(163, 161, 161, 0.74);">34$/month</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button4">BUY</button>
+        </div>
+    </div>
+
+    <!-- Video Projects -->
+    <h1 class="video-player" style="padding-bottom: 0px;">Video Projects</h1>
+    <div>
+        <div class="column c4">
+            <video autoplay loop controls muted>
+                <source src="assets\video-1.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="column c4">
+            <video autoplay loop controls muted>
+                <source src="assets\video-2.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div class="column c4">
+            <video autoplay loop controls muted>
+                <source src="assets\video-1.mp4" type="video/mp4" />
+            </video>
+        </div>
+    </div>
+
+    <!-- Zippy team -->
+    <h1 style="text-align: center;">Zippy Team</h1>
+    <div class="team">
+        <div class="row">
+            <div class=" column c3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="assets\profile.png">
+                        <ul class="social">
+                            <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lorem ipsum</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="assets\profile.png">
+                        <ul class="social">
+                            <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lorem ipsum</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="column c3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="assets\profile.png">
+                        <ul class="social">
+                            <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lorem ipsum</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="assets\profile.png">
+                        <ul class="social">
+                            <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lorem ipsum</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="column c3">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="assets\profile.png">
+                        <ul class="social">
+                            <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lorem ipsum</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="assets\profile.png">
+                        <ul class="social">
+                            <li><a href="" class="fa fa-facebook" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-twitter" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-google-plus" aria-hidden="true"></a></li>
+                            <li><a href="" class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        </ul>
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Lorem ipsum</h3>
+                        <h4 class="title">Web Developer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image gallery -->
+    <div style="text-align:center; background-color:rgb(221, 220, 220) ;"><br><br><br>
+        <h1>Life in Zippy</h1>
+
+        <div class="container">
+            <div class="gallery">
+                <img src="assets\gallary-1 (1).jpg">
+            </div>
+            <div class="gallery">
+                <img src="assets\gallary-1 (2).jpg">
+            </div>
+            <div class="gallery">
+                <img src="assets\gallary-1 (3).jpg">
+            </div>
+            <div class="gallery">
+                <img src="assets\gallary-1 (4).jpg">
+            </div>
+            <div class="gallery">
+                <img src="assets\gallary-1 (5).jpg">
+            </div>
+            <div class="gallery">
+                <img src="assets\gallary-1 (6).jpg">
+            </div>
+            <div class="flex-gal">
+                <div><a class="prev" onclick="plusSlides(-1)">❮</a></div>
+                <div>
+                    <img class="demo cursor" src="assets\gallary-1 (1).jpg" width=100% height="50" onclick="cSlide(1)">
+                </div>
+                <div>
+                    <img class="demo cursor" src="assets\gallary-1 (2).jpg" width=100% height="50" onclick="cSlide(2)">
+                </div>
+                <div>
+                    <img class="demo cursor" src="assets\gallary-1 (3).jpg" width=100% height="50" onclick="cSlide(3)">
+                </div>
+                <div>
+                    <img class="demo cursor" src="assets\gallary-1 (4).jpg" width=100% height="50" onclick="cSlide(4)">
+                </div>
+                <div>
+                    <img class="demo cursor" src="assets\gallary-1 (5).jpg" width=100% height="50" onclick="cSlide(5)">
+                </div>
+                <div>
+                    <img class="demo cursor" src="assets\gallary-1 (6).jpg" width=100% height="50" onclick="cSlide(6)">
+                </div>
+                <div><a class="next" onclick="plusSlides(1)">❯</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS for Image Gallery -->
+    <script>
+        var sIndex = 1;
+        display(sIndex);
+
+        function plusSlides(n) {
+            display(sIndex += n);
+        }
+
+        function cSlide(n) {
+            display(sIndex = n);
+        }
+
+        function display(n) {
+            var i;
+            var images = document.getElementsByClassName("gallery");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > images.length) { sIndex = 1 }
+            if (n < 1) { sIndex = images.length }
+            for (i = 0; i < images.length; i++) {
+                images[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            images[sIndex - 1].style.display = "block";
+            dots[sIndex - 1].className += " active";
+            captionText.innerHTML = dots[sIndex - 1].alt;
+        }
+    </script>
+
+    <!-- Newsletter Signup -->
+    <div class="container">
+        <img src="assets\newsletter.png" alt="Newsletter image" width=100% height="300">
+        <div class="newsletter">
+            <h1 style="text-align: center;">Newsletter Signup</h1>
+            <input type="email" id="email" placeholder="abc@example.com" style="padding: 8.5px;">
+            <button class="button button4" style="margin: 0">SIGNUP</button>
+            <button class="button button4 button6">SIGNUP</button>
+        </div>
+    </div>
+
+    <!--Blog -->
+    <br><br>
+    <h1 style="text-align: center;">Blog</h1>
+    <div class="fc">
+        <div>
+            <img src="assets\image-2.jpg" alt="blog image 1" width=100% height="140">
+            <h4 style="padding-top: 20px; padding-bottom: 20px;">Lorem Ipusm dolor sit amet consectetur adipiscing</h4>
+            <p style="color: rgba(163, 161, 161, 0.74);">15 Jan 2015</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button3" style="padding: 10px 20px;">READ MORE</button>
+        </div>
+        <div>
+            <img src="assets\image-1.jpg" alt="blog image 2" width=100% height="140">
+            <h4 style="padding-top: 20px; padding-bottom: 20px;">Lorem Ipusm dolor sit amet consectetur adipiscing</h4>
+            <p style="color: rgba(163, 161, 161, 0.74);">15 Jan 2015</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button3" style="padding: 10px 20px;">READ MORE</button>
+        </div>
+        <div>
+            <img src="assets\image-3.jpg" alt="blog image 3" width=100% height="140">
+            <h4 style="padding-top: 20px; padding-bottom: 20px;">Lorem Ipusm dolor sit amet consectetur adipiscing</h4>
+            <p style="color: rgba(163, 161, 161, 0.74);">15 Jan 2015</p><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p><br>
+            <button class="button button3" style="padding: 10px 20px;">READ MORE</button>
+        </div>
+    </div>
+
+    <!-- Map and Contact -->
+    <div class="container">
+        <div class="row row1">
+            <div class="column c1">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60952.886278655016!2d74.16223527266087!3d17.28873196313616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc182450c753bad%3A0xb3493b19ae7886ca!2sKarad%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1626031203497!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen></iframe>
+            </div>
+            <div class="column c1" style="background: #f5f10b;">
+                <div class="contact">
+                    <h1><strong>Contact</strong></h1><br>
+                </div>
+                <form style="padding-bottom: 5px;">
+                    <h6 style="margin-left:50px;">NAME<h6>
+                            <input type="text" id="name">
+                            <h6 style="margin-left:50px;">EMAIL ADDRESS</h6>
+                            <input type="text" id="email">
+                            <h6 style="margin-left:50px;">SUBJECT</h6>
+                            <input type="text" id="subject">
+                            <h6 style="margin-left:50px;">MESSAGE</h6>
+                            <textarea id="message" style="height:90px"></textarea>
+                            <br>
+                            <input type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="fc">
+        <div>
+            <h5><b>OFFICE ADDRESS</b></h5><br>
+            <p>Lorem Ipusm 123 <br>1200 consectetur adipiscing</p>
+        </div>
+        <div>
+            <h5><b>FOLLOW US</b></h5><br>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-tumblr"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div>
+            <h5><b>CONTACT US</b></h5><br>
+            <p>+1234566789 <br>zippy@skype<br> enquiry@zippy.com</p>
+        </div>
+    </section>
+</body>
+
+</html>
