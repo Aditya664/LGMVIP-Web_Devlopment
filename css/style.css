@@ -137,7 +137,15 @@ input[type="email"] {
   background-color: #f5f10b;
   color: black;
 }
-
+.button6 {
+  color: white;
+  font-size: x-small;
+  background-color: #47075a;
+}
+.button6:hover {
+  background-color: #f5f10b;
+  color: black;
+}
 .button5 {
   background-color: white;
   font-size: x-small;
